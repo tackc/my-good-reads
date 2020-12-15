@@ -128,3 +128,24 @@ form {
   flex-grow: 1;
 
 }
+
+/* Main page layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 0.3fr 2.3fr;
+  gap: 0em 0em;
+  grid-template-areas:
+    "book-search wishlist"
+    "search-results wishlist";
+  margin: 2em;
+}
+.book-search { grid-area: book-search; }
+.search-results { 
+  grid-area: search-results;
+  margin: 0 auto;
+}
+.wishlist { 
+  grid-area: wishlist;
+  margin: 0 auto;
+}
